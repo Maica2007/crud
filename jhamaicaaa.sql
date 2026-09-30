@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 30, 2026 at 05:59 AM
+-- Generation Time: Sep 30, 2026 at 03:24 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -63,8 +63,7 @@ INSERT INTO `subjects` (`id`, `subject_code`, `subject_name`, `units`) VALUES
 (2, 'IT102', 'Computer Programming 1', 3),
 (3, 'GE101', 'Mathematics in the Modern World', 3),
 (4, 'GE102', 'Understanding the Self', 3),
-(6, 'IT1010', 'HTML', 2),
-(7, '123', 'hshs', 2);
+(6, 'IT1010', 'HTML', 2);
 
 -- --------------------------------------------------------
 
@@ -88,7 +87,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `student_no`, `full_name`, `username`, `password`, `role`) VALUES
 (1, NULL, 'jhamaica manalo', 'admin', '$2y$12$kyGmVMqZHnhqCyh89Q9jxeVZ1Z9xoBCd4ZX/rIFo3I.laZWK0XJde', 'admin'),
 (2, '2026-0001', 'juan dela cruz', 'juan', '$2y$12$K2wcAyd47mAWVY5dDxRGp.yFlRKWj73Rrzvc9jgYSrgb0PI0av9vW', 'student'),
-(5, '2026-0002', 'jhamaica manalo', 'jhamaica', '$2y$10$vSvBp4QBqmDeiHXxG/vAE.vftn6uSrJb3nkvHyLiTOGonjjudDuCO', 'student');
+(9, '2026-0007', 'jemalyn arellano', 'jema', '$2y$10$dsphuCInCcfBm1P2tnCNTOFOE.uCTEoQ10/hMVnP4hkCpuETNtO1m', 'student');
 
 --
 -- Indexes for dumped tables
@@ -131,13 +130,13 @@ ALTER TABLE `enrollments`
 -- AUTO_INCREMENT for table `subjects`
 --
 ALTER TABLE `subjects`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- Constraints for dumped tables

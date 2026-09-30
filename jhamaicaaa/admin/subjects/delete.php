@@ -10,7 +10,7 @@ session_start();
  $id = isset($_GET['id']) ? intval($_GET['id']) : 0;
 
  //delete SQL
- mysqli_query($conn, "DELETE FROM users WHERE id=$id and role='subject'");
+ mysqli_query($conn, "DELETE FROM subjects WHERE id=$id");
  header('location: index.php');
  exit;
 

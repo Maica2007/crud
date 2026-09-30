@@ -24,11 +24,11 @@ if(!$student)
             $username   = $_POST['username'];
             //if password is blank , keep old password
             if($_POST['password'] == ""){
-                $sql = "UPDATE users SET student_no = '$student_no', full_name = '$full_name username = $username WHERE id=$id AND role='student'";
+                $sql = "UPDATE users SET student_no = '$student_no', full_name = '$full_name username = $username', WHERE id=$id AND role='student'";
             }
             else{
                 $new_password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-                 $sql = "UPDATE users SET student_no = '$student_no', full_name = '$full_name', username = '$username', $password = $new_password WHERE id=$id AND role= 'student'";
+                 $sql = "UPDATE users SET student_no = '$student_no', full_name = '$full_name', username = '$username', password = '$new_password' WHERE id=$id AND role='student'";
             }
 
             if(mysqli_query($conn, $sql)){

@@ -95,7 +95,8 @@ if(isset($_POST["save"])){
 
                         <input
                             type="number"
-                            class="form-control" name="units"
+                             class="form-control" 
+                             name="units"
                         >
                     </div>
 
