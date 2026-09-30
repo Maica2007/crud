@@ -1,6 +1,6 @@
 
-CREATE DATABASE IF NOT EXISTS manalo_crud;
-USE manalo_crud;
+CREATE DATABASE IF NOT EXISTS jhamaicaaa;
+USE jhamaicaaa;
 
 DROP TABLE IF EXISTS enrollments;
 DROP TABLE IF EXISTS subjects;
